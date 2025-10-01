@@ -170,8 +170,6 @@ body {
     color: #1F1F1F;
 }
 
-/* Slider */
-
 /* Slide */
 
 .slide {
@@ -194,7 +192,7 @@ body {
     -webkit-text-fill-color: transparent;
 }
 
-/* about */
+/* About */
 
 .about {
     padding: 144px 0;
@@ -243,4 +241,37 @@ body {
 .video__object {
     width: 100%;
     vertical-align: top;
+}
+
+/* Footer */
+
+.footer {
+    padding: 162px 0 82px;
+
+    letter-spacing: 0.04em;
+    font-size: 20px;
+    line-height: 36px;
+    color:rgb(31, 31, 31, 0.7);
+}
+
+.footer a {
+    letter-spacing: 0.04em;
+    font-size: 20px;
+    line-height: 36px;
+    color:rgb(31, 31, 31, 0.7);
+}
+
+.footer__row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__nav {
+    display: flex;
+    column-gap: 104px; 
+}
+
+.footer__socials {
+    display: flex;
+    column-gap: 27px;
 }
