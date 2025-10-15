@@ -1,9 +1,14 @@
 @import "./reset.css";
 @import "./fonts/Gilroy/stylesheet.css";
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: "Gilroy", sans-serif;
     font-weight: 500;
+    color: rgba(31, 31, 31, 0.7);
 }
 
 .container {
@@ -88,6 +93,7 @@ body {
 /* Header */
 
 .header {
+    position: relative;
     min-height: 100vh; 
     background-color: #E9F2F6;
     background-image: url('./../img/header/header-bg.jpg');
@@ -100,6 +106,15 @@ body {
     padding: 44px 0;
 }
 
+.header__arrows {
+    position: absolute;
+    bottom: 59px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Nav */
+
 .nav {
     display: flex;
     justify-content: space-between;
@@ -111,6 +126,10 @@ body {
     column-gap: 118px;
 }
 
+.nav__btn {
+    display: none;
+}
+
 .link {
     font-size: 20px;
     font-weight: 800;
@@ -118,6 +137,10 @@ body {
 }
 
 /* Header content */
+
+.header__content-mobile {
+    display: none;
+}
 
 .header__content {
     max-width: 1060px;
@@ -135,7 +158,8 @@ body {
 .header__text {
     margin-bottom: 72px;
     font-size: 34px;
-    color: #1F1F1F;
+    line-height: 1.57;
+    color: rgba(31, 31, 31, 0.7);
 }
 
 .header__text p + p {
