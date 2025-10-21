@@ -33,6 +33,10 @@ body {
     display: none;
 }
 
+.hidden {
+    visibility: hidden;
+}
+
 /* Button */
 
 .btn {
@@ -249,6 +253,7 @@ body {
 .video-overlay::after {
     content: "";
     position: absolute;
+    z-index: 8;
     left: 0;
     top: 0;
     width: 100%;
@@ -265,13 +270,17 @@ body {
 }
 
 .video__picture {
-    position:absolute;
-    top: 0;
-    left: 0;
+    position: relative;
+    z-index: 7;
 }
 
 .video__object {
+    position:absolute;
+    top: 0;
+    left: 0;
+
     width: 100%;
+    height: 100%;
     vertical-align: top;
 }
 
